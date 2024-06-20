@@ -6,12 +6,19 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Base font size */
 }
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
 }
 
 /* Header Styles */
@@ -37,9 +44,21 @@ h1 {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw; /* Responsive font size based on viewport width */
+    }
+}
+
 header p {
     font-size: 1.2em;
     margin: 10px 0 0;
+}
+
+@media (max-width: 768px) {
+    header p {
+        font-size: 4vw; /* Responsive font size based on viewport width */
+    }
 }
 
 /* Navigation Styles */
@@ -67,6 +86,7 @@ nav a {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1em;
 }
 
 nav a.current-page {
@@ -82,6 +102,24 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav a {
+        font-size: 5vw; /* Responsive font size based on viewport width */
+        padding: 10px;
+    }
+}
+
 /* Section Styles */
 section {
     padding: 40px 20px;
@@ -91,7 +129,11 @@ section {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+@media (max-width: 768px) {
+    section {
+        padding: 20px 10px;
+    }
+}
 
 h2 {
     font-size: 2em;
@@ -100,10 +142,22 @@ h2 {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    h2 {
+        font-size: 5vw; /* Responsive font size based on viewport width */
+    }
+}
+
 p {
     font-size: 1.1em;
     margin-bottom: 10px;
     text-align: justify;
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 4vw; /* Responsive font size based on viewport width */
+    }
 }
 
 /* Project, Job, Education Item Styles */
@@ -118,6 +172,13 @@ p {
 
 .project h3, .job h3, .education-item h3 {
     color: #3498db;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .project h3, .job h3, .education-item h3 {
+        font-size: 4.5vw; /* Responsive font size based on viewport width */
+    }
 }
 
 /* Skills Grid */
@@ -125,6 +186,12 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
 }
 
 .skill-item {
@@ -153,6 +220,16 @@ p {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .skill-item i {
+        font-size: 10vw; /* Responsive icon size based on viewport width */
+    }
+
+    .skill-item h3 {
+        font-size: 4vw; /* Responsive font size based on viewport width */
+    }
+}
+
 /* Form Styles */
 form {
     display: flex;
@@ -162,6 +239,7 @@ form {
 
 label {
     font-weight: bold;
+    font-size: 1.1em;
 }
 
 input, textarea {
@@ -169,6 +247,17 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    input, textarea {
+        font-size: 4vw; /* Responsive font size based on viewport width */
+        padding: 5px; /* Adjust padding for smaller screens */
+    }
+
+    label {
+        font-size: 4vw; /* Responsive font size based on viewport width */
+    }
 }
 
 button {
@@ -184,6 +273,7 @@ button {
 button:hover {
     background-color: #2ecc71;
 }
+
 /* Footer Styles */
 footer {
     background: #333;
@@ -197,4 +287,10 @@ footer p {
     margin: 0;
     font-size: 1em;
     font-family: 'Arial Black', sans-serif;
+}
+
+@media (max-width: 768px) {
+    footer p {
+        font-size: 3.5vw; /* Responsive font size based on viewport width */
+    }
 }
