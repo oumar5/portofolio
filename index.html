@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oumar Ben Lol - Portfolio</title>
+    <title>Oumar Ben Lol - Étudiant Data Scientist, Développeur IA, Web, Mobile et Systèmes Embarqués</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,11 +13,15 @@
         <div class="container">
             <img src="img/photo.jpg" alt="Photo de Oumar Ben Lol" class="profile-photo">
             <h1>Oumar Ben Lol</h1>
-            <p>À la recherche d'une alternance en Data Science et Développement d'Intelligence Artificielle</p>
+            <p>Étudiant Data Scientist, Développeur IA, Web, Mobile et Systèmes Embarqués</p>
         </div>
     </header>
     <nav>
         <div class="container">
+            <div class="mobile-nav-header">
+                <button id="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+                <span id="current-page-title"></span>
+            </div>
             <ul id="menu">
                 <li><a href="index.html#accueil" class="current-page">Accueil</a></li>
                 <li><a href="about.html#about">À propos</a></li>
@@ -26,19 +30,14 @@
                 <li><a href="experience.html#experience">Expérience</a></li>
                 <li><a href="education.html#education">Formation</a></li>
                 <li><a href="contact.html#contact">Contact</a></li>
-
             </ul>
         </div>
     </nav>
     <section id="introduction" class="container">
         <h2>Bienvenue sur mon Portfolio</h2>
         <div class="section-bordered">
-            <p>Je suis Oumar Ben Lol, avec une formation en Sciene et Ingénierie des Données. Actuellement à la
-                recherche d'une alternance en Data Science et Développement, je suis passionné par l'IA et les
-                technologies de pointe.</p>
-            <p>Découvrez mes <a href="projects.html">projets</a>, mes <a href="skills.html">compétences</a>, mon <a
-                    href="experience.html">parcours professionnel</a> et ma <a href="education.html">formation</a>.
-                N'hésitez pas à me <a href="contact.html">contacter</a> pour toute opportunité de collaboration.</p>
+            <p>Je suis Oumar Ben Lol, étudiant en Data Science et Intelligence Artificielle. Passionné par l'IA et les technologies de pointe, je suis dédié à développer des solutions innovantes.</p>
+            <p>Découvrez mes <a href="projects.html">projets</a>, mes <a href="skills.html">compétences</a>, mon <a href="experience.html">parcours professionnel</a> et ma <a href="education.html">formation</a>. N'hésitez pas à me <a href="contact.html">contacter</a> pour toute opportunité de collaboration.</p>
         </div>
     </section>
     <footer>
@@ -46,6 +45,7 @@
             <p>&copy; 2024 Oumar Ben Lol. Tous droits réservés.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
