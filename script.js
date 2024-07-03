@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Gestion du bouton hamburger
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const menu = document.getElementById('menu');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         currentPageTitle.textContent = currentPageLink.textContent;
     }
 
-    hamburgerBtn.addEventListener('click', function() {
+    hamburgerBtn.addEventListener('click', function () {
         menu.classList.toggle('show');
         hamburgerBtn.classList.toggle('open');
     });
@@ -53,3 +53,13 @@ function handleSubmit(event) {
 
     return false; // Empêche la soumission réelle du formulaire
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const profilePhoto = document.querySelector('.profile-photo');
+    profilePhoto.onload = function () {
+        profilePhoto.classList.add('profile-photo-loaded');
+    };
+    profilePhoto.src = profilePhoto.getAttribute('src');
+});
+
