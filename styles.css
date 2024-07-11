@@ -1,7 +1,7 @@
 /* Variables CSS pour les couleurs */
 :root {
     --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --secondary-color: #117e3e;
     --highlight-color: #e74c3c;
     --background-color: #f5f5f5;
     --text-color: #333;
@@ -365,6 +365,11 @@ button {
 
 button:hover {
     background-color: var(--secondary-color);
+}
+
+/* Section-specific margins */
+#skills, #frameworks, #cloud-computing, #collaboration-tools, #languages, #software {
+    margin-bottom: 40px; /* Add margin between sections */
 }
 
 /* Footer Styles */
