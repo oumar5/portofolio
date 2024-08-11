@@ -341,7 +341,9 @@ input, textarea {
     border-radius: 5px;
     font-size: 1em;
 }
-
+#education, #certificates {
+    margin-bottom: 40px; /* Ajustez la valeur selon vos préférences */
+}
 @media (max-width: 768px) {
     input, textarea {
         font-size: 4vw; /* Responsive font size based on viewport width */
